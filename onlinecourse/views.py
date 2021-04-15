@@ -174,7 +174,7 @@ def show_exam_result(request, course_id, submission_id):
         context["c_submits"]  =  c_submits
         context["c_results"]  =  c_results
         context["grade"]  =  int((total_user/total)*100)
-        #print(vars(submission.chocies))
+        print(vars(submission.chocies))
         #user = request.user
         #return render(request, 'onlinecourse/show_exam_result.html', context)
         return render(request, 'onlinecourse/exam_result_bootstrap.html', context)
